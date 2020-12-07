@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteBase /
+
+#define pagina principal
+#DirectoryIndex index.php index.html
+#Para evitar a listagem dos recursos do diretório
+#Options -Indexes
+
+#RewriteCond %{THE_REQUEST} public/([^\s?]*) [NC]
+#RewriteRule ^ %1 [L,NE,R=302]
+#RewriteRule ^((?!public/).*)$ /public/$1 [L,NC]
