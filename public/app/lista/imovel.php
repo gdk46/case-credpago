@@ -1,7 +1,7 @@
-<div class="col-12">
+<div class="col-12" style="max-height: 500px; overflow:auto;">
     <h3>Imovel</h3>
 
-    <table class="table">
+    <table class="table table-bordered">
         <thead>
             <tr>
                 <th scope="col">#</th>
@@ -10,6 +10,7 @@
                 <th scope="col">Bairro</th>
                 <th scope="col">UF</th>
                 <th scope="col">Locador</th>
+                <th scope="col"></th>
             </tr>
         </thead>
         <tbody>        

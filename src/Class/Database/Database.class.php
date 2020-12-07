@@ -73,7 +73,7 @@ class Database {
 
 
     // ================= FAZ EDIÇÃO
-    public function Update($Tabela, array $Dados, $Condicao = NULL) {
+    public function Update($Tabela, array $Dados, $Condicao = NULL, $debugg = false) {
         foreach ($Dados as $Keys => $ValuesKeys) {
             $CamposFields[] = "$Keys = '$ValuesKeys'";
         }
@@ -81,6 +81,10 @@ class Database {
         $CamposFields = implode(", ", $CamposFields);
         $SqlUpdate = "UPDATE {$Tabela} SET {$CamposFields} WHERE {$Condicao}";
         $QueryUpdate = mysqli_query($this->Conn(), $SqlUpdate);
+
+        if($debugg){
+            echo $SqlUpdate;
+        }
 
         if ($QueryUpdate):
             return true;

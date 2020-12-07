@@ -1,7 +1,7 @@
-<div class="col-12">
+<div class="col-12" style="max-height: 500px; overflow:auto;">
     <h3>Contrato</h3>
 
-    <table class="table">
+    <table class="table table-bordered">
         <thead>
             <tr>
                 <th scope="col">#</th>

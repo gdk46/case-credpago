@@ -1,12 +1,12 @@
 <div class="col-12">
-    <h3>Locador</h3>
-
+    <h3>Contrato</h3>
+    
     <div class="form-group row" id="input-grup">
     </div>
 
     <div class="form-group row">
         <div class="col-4">
-            <button class="btn btn-success" id="salva">
+            <button class="btn btn-success" id="enviar">
                 Cadastra
             </button>
         </div>
@@ -20,36 +20,44 @@
         let id = parseInt(url.searchParams.get("id"));
 
         if (id == null) {
-            alert();
+            $("#input-grup").append('Erro')
         } else {
             $("#enviar").click(function() {
                 $.ajax({
                     type: 'POST',
-                    url: '../../src/ControllerAjax/contrato.ajax.php',
+                    url: '../../src/ControllerAjax/locatario.ajax.php',
                     data: {
                         "action": "atualizar",
-                        "id": id
+                        "id": id,
+                        "nome": $("input[name=nome]").val(),
+                        "email": $("input[name=email]").val(),
+                        "telefone": $("input[name=telefone]").val()
                     },
                     success: function(data) {
                         if (data == 1) {
-                            $(location).attr('href', '?fld=lista&pg=contrato');
+                            $(location).attr('href', '?fld=lista&pg=locatario');
                         } else {
                             alert('erro');
                         }
                     }
                 });
             });
+
+            $.ajax({
+                type: 'POST',
+                url: '../../src/ControllerAjax/locatario.ajax.php',
+                data: {
+                    "action": "intup-update",
+                    "id": id
+                },
+                success: function(data) {
+                    $("#input-grup").append(data)
+                }
+            });
         }
 
 
 
-        $.ajax({
-            type:'POST',
-            url:'../../src/ControllerAjax/locador.ajax.php',
-            data:{"action": "intup-update"},
-            success: function (data) {
-                $("#input-grup").append(data)
-            }
-        });
+
     })
 </script>

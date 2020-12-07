@@ -13,13 +13,13 @@ if(isset($dataPost['action'])){
 
 switch ($action) {
     case 'atualizar':
-        $update = $db->Update(TABELA, $_POST, "id = {$dataPost['id']}");
+        $update = $db->Update(TABELA, $dataPost, "id = {$dataPost['id']}");
         $result = ($update) ? true : false;
         break;
 
 
     case 'criar':
-        $create = $db->Create(TABELA, $_POST);
+        $create = $db->Create(TABELA, $dataPost);
         $result = ($create) ? true : false;
         echo $result;
         break;
