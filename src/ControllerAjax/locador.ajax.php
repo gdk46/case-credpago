@@ -7,8 +7,8 @@ define('TABELA', 'locador');
 
 $dataPost = $st->Clean($_POST);
 
-if(isset($dataPost['action'])){
-    
+if (isset($dataPost['action'])) {
+
     $action = $dataPost['action'];
     unset($dataPost['action']);
 }
@@ -34,7 +34,7 @@ switch ($action) {
 
         if ($db->NumQuery($read)) {
             $delete      = $db->Delete(TABELA, $query);
-            $result = ($delete) ? true : false;           
+            $result = ($delete) ? true : false;
         }
         echo $result;
         break;
@@ -114,7 +114,27 @@ switch ($action) {
         }
         echo $inputUpdate;
         break;
+    case 'intup-create':
+        $inputCreate = "";
+            $inputCreate .= "                
+                <div class='col-4'>
+                    <label>Nome:</label>
+                    <input type='text' name='nome' class='form-control''>
+                </div>
 
+                <div class='col-4'>
+                    <label>Email:</label>
+                    <input type='text' name='email' class='form-control'>
+                </div>
+
+                <div class='col-4'>
+                    <label>Telefone:</label>
+                    <input type='text' name='telefone' class='form-control'>
+                </div>
+            ";
+
+        echo $inputCreate;
+        break;
     default:
         echo "Aguardando";
         break;

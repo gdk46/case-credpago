@@ -15,46 +15,41 @@
 
 <script>
     $(document).ready(function() {
-        let url_string = window.location.href;
-        let url = new URL(url_string);
-        let id = parseInt(url.searchParams.get("id"));
 
-        if (id == null) {
-            $("#input-grup").append('Erro')
-        } else {
-            $("#enviar").click(function() {
-                $.ajax({
-                    type: 'POST',
-                    url: '../../src/ControllerAjax/locador.ajax.php',
-                    data: {
-                        "action": "atualizar",
-                        "id": id,
-                        "nome": $("input[name=nome]").val(),
-                        "email": $("input[name=email]").val(),
-                        "telefone": $("input[name=telefone]").val()
-                    },
-                    success: function(data) {
-                        if (data == 1) {
-                            $(location).attr('href', '?fld=lista&pg=locador');
-                        } else {
-                            alert('erro');
-                        }
-                    }
-                });
-            });
 
+        $("#enviar").click(function() {
             $.ajax({
                 type: 'POST',
                 url: '../../src/ControllerAjax/locador.ajax.php',
                 data: {
-                    "action": "intup-update",
-                    "id": id
+                    "action": "atualizar",
+                    "id": id,
+                    "nome": $("input[name=nome]").val(),
+                    "email": $("input[name=email]").val(),
+                    "telefone": $("input[name=telefone]").val()
                 },
                 success: function(data) {
-                    $("#input-grup").append(data)
+                    if (data == 1) {
+                        $(location).attr('href', '?fld=lista&pg=locador');
+                    } else {
+                        alert('erro');
+                    }
                 }
             });
-        }
+        });
+
+        $.ajax({
+            type: 'POST',
+            url: '../../src/ControllerAjax/locador.ajax.php',
+            data: {
+                "action": "intup-update",
+                "id": id
+            },
+            success: function(data) {
+                $("#input-grup").append(data)
+            }
+        });
+
 
 
 
