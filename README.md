@@ -1,3 +1,25 @@
 # case imobiliário
 
-projeto na brach master
+
+<pre>
+case-imobiliario/
+├── doc/
+│   │             
+│   ├──
+│   ├──
+│   └──
+│   ├── src/
+│   │             
+│   ├──
+│   ├──
+│   └──
+│   
+│   
+│   
+│   
+├── .editorconfig  
+├── .gitignore 
+├── .htaccess
+├── LICENSE
+└──README.md 
+</pre>
