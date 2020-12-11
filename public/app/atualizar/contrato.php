@@ -7,8 +7,11 @@
     <div class="form-group row">
         <div class="col-4">
             <button class="btn btn-success" id="enviar">
-                Cadastra
+                Salva
             </button>
+            <a class="btn btn-primary" href="?fld=lista&pg=contrato">
+                Voltar
+            </a>
         </div>
     </div>
 </div>

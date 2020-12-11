@@ -2,7 +2,7 @@
 
     <h1>Locatário</h1>
 
-    <img src="http://localhost/php/case-imobiliarioa/public/img/icon/trash.svg" alt="" style="height:300px;">
+    <img src="http://localhost/php/case-imobiliarioa/public/assets/img/icon/trash.svg" alt="" style="height:300px;">
     
     
 
@@ -12,7 +12,7 @@
             <br>
             Sendo assim, você não terá como recuperar esses dados
         </h4>
-        <a href="?fld=lista&pg=locatario" class="btn btn-primary active">Voltar</a>
+        <a href="?fld=lista&pg=contrato" class="btn btn-primary active">Voltar</a>
 
         <button class="btn btn-secondary active" id="enviar">
             Excluir

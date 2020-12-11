@@ -1,6 +1,6 @@
 <div class="col-12">
     <h3>Imovel</h3>
-    
+
     <div class="form-group row" id="input-grup">
     </div>
 
@@ -18,16 +18,20 @@
         $("#enviar").click(function() {
             $.ajax({
                 type: 'POST',
-                url: '../../src/ControllerAjax/locador.ajax.php',
+                url: '../../src/ControllerAjax/imovel.ajax.php',
                 data: {
                     "action": "criar",
-                    "nome": $("input[name=nome]").val(),
-                    "email": $("input[name=email]").val(),
-                    "telefone": $("input[name=telefone]").val()
+                    "id_proprietario": $("#proprietario option:selected").val(),
+                    "cep":         $("input[name=cep]").val(),
+                    "logradouro":  $("input[name=logradouro]").val(),
+                    "complemento": $("input[name=complemento]").val(),
+                    "cidade":      $("input[name=cidade]").val(),
+                    "bairro":      $("input[name=bairro]").val(),
+                    "uf":          $("#uf option:selected").val()
                 },
                 success: function(data) {
                     if (data == 1) {
-                        $(location).attr('href', '?fld=lista&pg=locador');
+                        $(location).attr('href', '?fld=lista&pg=imovel');
                     } else {
                         alert('erro');
                     }
@@ -36,6 +40,7 @@
         });
 
 
+        
         $.ajax({
             type: 'POST',
             url: '../../src/ControllerAjax/imovel.ajax.php',
@@ -46,5 +51,6 @@
                 $("#input-grup").append(data)
             }
         });
+
     });
 </script>

@@ -11,11 +11,17 @@
                 <th scope="col"></th>
             </tr>
         </thead>
-        <tbody>
-            
-        </tbody>
+        <tbody></tbody>
     </table>
 
+
+    <div class="form-group row">
+        <div class="col-4">
+            <a class="btn btn-primary" href="?fld=cadastro&pg=locatario">
+                Novo Cadastra
+            </a>
+        </div>
+    </div>
 </div>
 
 <script>

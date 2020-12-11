@@ -6,14 +6,19 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="http://localhost/php/case-imobiliarioa/public/boot/concept-master/assets/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://localhost/php/case-imobiliarioa/public/boot/concept-master/assets/vendor/fonts/circular-std/style.css">
     <link rel="stylesheet" href="http://localhost/php/case-imobiliarioa/public/boot/concept-master/assets/libs/css/style.css">
     <link rel="stylesheet" href="http://localhost/php/case-imobiliarioa/public/boot/concept-master/assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
-    <!-- jquery 3.3.1 -->
+    
+    
+    <!-- jquery 3.3.1 AND libs -->
     <script src="http://localhost/php/case-imobiliarioa/public/boot/concept-master/assets/vendor/jquery/jquery-3.3.1.min.js"></script>
-    <title>Gestor imobiliário</title>
+    <!-- gerador de parcelas -->
+    <script src="http://localhost/php/case-imobiliarioa/public/assets/libs/gerador-de-parcela/generateParcel.js"></script>
+    <title>Imob Gestor</title>
 </head>
 
 <body>
@@ -26,7 +31,7 @@
         <!-- ============================================================== -->
         <div class="dashboard-header">
             <nav class="navbar navbar-expand-lg bg-white fixed-top">
-                <a class="navbar-brand" href="index.html">Gestor</a>
+                <a class="navbar-brand" href="index.html">Imob Gestor</a>
             </nav>
         </div>
         <!-- ============================================================== -->
@@ -66,10 +71,6 @@
                                         <li class="nav-item">
                                             <a class="nav-link" href="?fld=cadastro&pg=imovel">Imóvel</a>
                                         </li>
-
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="?fld=cadastro&pg=contrato">Contrato</a>
-                                        </li>                                        
                                     </ul>
                                 </div>
                             </li>

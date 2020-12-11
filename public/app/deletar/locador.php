@@ -2,7 +2,7 @@
 
     <h1>Locador</h1>
 
-    <img src="http://localhost/php/case-imobiliarioa/public/img/icon/trash.svg" alt="" style="height:300px;">
+    <img src="http://localhost/php/case-imobiliarioa/public/assets/img/icon/trash.svg" alt="" style="height:300px;">
     
     
 

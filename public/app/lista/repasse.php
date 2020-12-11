@@ -5,15 +5,14 @@
         <thead>
             <tr>
                 <th scope="col">#</th>
-                <th scope="col">Locatário</th>
+                <th scope="col">Nome</th>
                 <th scope="col">Valor repasse</th>
                 <th scope="col">Status</th>
                 <th scope="col">Data</th>
                 <th scope="col"></th>
             </tr>
         </thead>
-        <tbody>
-        </tbody>
+        <tbody></tbody>
     </table>
 
 </div>
@@ -29,5 +28,9 @@
                 $("tbody").append(data)
             }
         });
+
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
     });
 </script>
