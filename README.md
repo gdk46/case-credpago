@@ -93,7 +93,7 @@ case-imobiliario/
 ```
 rota: case-imobiliario/public/app/index.php
 ```
-Responsável por receber requisições http(s) e index a página correspondente a requisição. Essas requisições são feitas via query string onde é informado o folder e a página que deve ser indexada. Esse tipo de requisição seria a teoria posta em prática do patten front controller no procedural.
+Responsável por receber requisições http(s) e indexa a página correspondente a requisição. Essas requisições são feitas via query string onde é informado o folder e a página que deve ser indexada. Esse tipo de requisição seria a teoria posta em prática do patten front controller no procedural.
 
 
 
