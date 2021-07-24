@@ -1,23 +1,23 @@
 
 <!doctype html>
 <html lang="en">
- 
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="http://localhost/php/case-imobiliarioa/public/boot/concept-master/assets/vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://localhost/php/case-imobiliarioa/public/boot/concept-master/assets/vendor/fonts/circular-std/style.css">
-    <link rel="stylesheet" href="http://localhost/php/case-imobiliarioa/public/boot/concept-master/assets/libs/css/style.css">
-    <link rel="stylesheet" href="http://localhost/php/case-imobiliarioa/public/boot/concept-master/assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
-    
-    
+    <link rel="stylesheet" href="http://localhost:8181/public/boot/concept-master/assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://localhost:8181/public/boot/concept-master/assets/vendor/fonts/circular-std/style.css">
+    <link rel="stylesheet" href="http://localhost:8181/public/boot/concept-master/assets/libs/css/style.css">
+    <link rel="stylesheet" href="http://localhost:8181/public/boot/concept-master/assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+
+
     <!-- jquery 3.3.1 AND libs -->
-    <script src="http://localhost/php/case-imobiliarioa/public/boot/concept-master/assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script src="http://localhost:8181/public/boot/concept-master/assets/vendor/jquery/jquery-3.3.1.min.js"></script>
     <!-- gerador de parcelas -->
-    <script src="http://localhost/php/case-imobiliarioa/public/assets/libs/gerador-de-parcela/generateParcel.js"></script>
+    <script src="http://localhost:8181/public/assets/libs/gerador-de-parcela/generateParcel.js"></script>
     <title>Imob Gestor</title>
 </head>
 
@@ -43,7 +43,7 @@
         <div class="nav-left-sidebar sidebar-dark">
             <div class="menu-list">
                 <nav class="navbar navbar-expand-lg navbar-light">
-                    
+
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -67,7 +67,7 @@
                                         <li class="nav-item">
                                             <a class="nav-link" href="?fld=cadastro&pg=locador">Locador (proprietário)</a>
                                         </li>
-                                        
+
                                         <li class="nav-item">
                                             <a class="nav-link" href="?fld=cadastro&pg=imovel">Imóvel</a>
                                         </li>
@@ -86,7 +86,7 @@
                                         <li class="nav-item">
                                             <a class="nav-link" href="?fld=lista&pg=locador">Locador (proprietário)</a>
                                         </li>
-                                        
+
                                         <li class="nav-item">
                                             <a class="nav-link" href="?fld=lista&pg=imovel">Imóvel</a>
                                         </li>
@@ -107,7 +107,7 @@
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="?fld=lista&pg=repasse">Repasses</a>
-                                        </li>                                        
+                                        </li>
                                     </ul>
                                 </div>
                             </li>
@@ -137,7 +137,7 @@
 
                     <div class="row">
                         <div class="col-12">
-                            <div class="card">                                
+                            <div class="card">
                                 <div class="card-body">
                                     {{dynamicArea}}
                                 </div>
@@ -155,11 +155,11 @@
     <!-- end main wrapper  -->
     <!-- ============================================================== -->
     <!-- bootstap bundle js -->
-    <script src="http://localhost/php/case-imobiliarioa/public/boot/concept-master/assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="http://localhost:8181/public/boot/concept-master/assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
     <!-- slimscroll js -->
-    <script src="http://localhost/php/case-imobiliarioa/public/boot/concept-master/assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+    <script src="http://localhost:8181/public/boot/concept-master/assets/vendor/slimscroll/jquery.slimscroll.js"></script>
     <!-- main js -->
-    <script src="http://localhost/php/case-imobiliarioa/public/boot/concept-master/assets/libs/js/main-js.js"></script>
+    <script src="http://localhost:8181/public/boot/concept-master/assets/libs/js/main-js.js"></script>
 </body>
- 
+
 </html>
