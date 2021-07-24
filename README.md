@@ -59,7 +59,7 @@ cd case-credpago
 
 Inicialize o serviço com o servidor imbutido do PHP:
 ```
-php -S localhost:8181 public/app/
+php -S localhost:8181
 ```
 
 Já com o XAMPP/LAMP inicializado é preciso subir uma versão do banco de dados, para isso você deve seguir o seguintes passos 
