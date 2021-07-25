@@ -24,6 +24,9 @@
   <img src="https://img.shields.io/static/v1?label=tec.&message=PHP&color=8892BF&style=for-the-badge&logo=PHP"/>
 </p>
 
+### Preview
+![Gestor](/preview.png)
+
 ### 🏁Sobre
 Consiste em uma aplicação monolítica para cadastro de dados de imóveis, locador, locatário e  para gerar parcelas.
 
